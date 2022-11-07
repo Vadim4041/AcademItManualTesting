@@ -1,0 +1,71 @@
+[
+  {
+    "nameRus": "Канада",
+    "nameEng": "Canada",
+    "codeIso": "CA",
+    "currencyCode": 124,
+    "cities": [
+      {
+        "nameRus": "Торонто",
+        "nameEng": "Toronto",
+        "population": 2503281
+      },
+      {
+        "nameRus": "Монреаль",
+        "nameEng": "Montreal",
+        "population": 1620693
+      },
+      {
+        "nameRus": "Оттава",
+        "nameEng": "Ottawa",
+        "population": 812129
+      }
+    ]
+  },
+  {
+    "nameRus": "Россия",
+    "nameEng": "Russia",
+    "codeIso": "RU",
+    "currencyCode": 810,
+    "cities": [
+      {
+        "nameRus": "Москва",
+        "nameEng": "Moscow",
+        "population": 12655050
+      },
+      {
+        "nameRus": "Санкт-Петербург",
+        "nameEng": "Saint-Petersburg",
+        "population": 5384342
+      },
+      {
+        "nameRus": "Новосибирск",
+        "nameEng": "Novosibirsk",
+        "population": 1620162
+      }
+    ]
+  },
+  {
+    "nameRus": "Великобритания",
+    "nameEng": "Great Britain",
+    "codeIso": "GB",
+    "currencyCode": 826,
+    "cities": [
+      {
+        "nameRus": "Лондон",
+        "nameEng": "London",
+        "population": 8787892
+      },
+      {
+        "nameRus": "Бирмингем",
+        "nameEng": "Birmingham",
+        "population": 1137100
+      },
+      {
+        "nameRus": "Лидс",
+        "nameEng": "Leeds",
+        "population": 781700
+      }
+    ]
+  }
+]

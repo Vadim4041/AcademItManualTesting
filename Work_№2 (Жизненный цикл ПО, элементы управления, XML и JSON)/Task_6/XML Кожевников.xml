@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<countries>
+    <country number="1">
+        <nameRus>Канада</nameRus>
+        <nameEng>Canada</nameEng>
+        <codeIso>CA</codeIso>
+        <currencyCode>124</currencyCode>
+        <cities>
+            <city number="1">
+                <nameRus>Торонто</nameRus>
+                <nameEng>Toronto</nameEng>
+                <population>2503281</population>
+            </city>
+            <city number="2">
+                <nameRus>Монреаль</nameRus>
+                <nameEng>Montreal</nameEng>
+                <population>1620693</population>
+            </city>
+            <city number="3">
+                <nameRus>Оттава</nameRus>
+                <nameEng>Ottawa</nameEng>
+                <population>812129</population>
+            </city>
+        </cities>
+    </country>
+    <country number="2">
+        <nameRus>Россия</nameRus>
+        <nameEng>Russia</nameEng>
+        <codeIso>RU</codeIso>
+        <currencyCode>810</currencyCode>
+        <cities>
+            <city number="1">
+                <nameRus>Москва</nameRus>
+                <nameEng>Moscow</nameEng>
+                <population>12655050</population>
+            </city>
+            <city number="2">
+                <nameRus>Санкт-Петербург</nameRus>
+                <nameEng>Saint-Petersburg</nameEng>
+                <population>5384342</population>
+            </city>
+            <city number="3">
+                <nameRus>Новосибирск</nameRus>
+                <nameEng>Novosibirsk</nameEng>
+                <population>1620162</population>
+            </city>
+        </cities>
+    </country>
+    <country number="3">
+        <nameRus>Великобритания</nameRus>
+        <nameEng>Great Britain</nameEng>
+        <codeIso>GB</codeIso>
+        <currencyCode>826</currencyCode>
+        <cities>
+            <city number="1">
+                <nameRus>Лондон</nameRus>
+                <nameEng>London</nameEng>
+                <population>8787892</population>
+            </city>
+            <city number="2">
+                <nameRus>Бирмингем</nameRus>
+                <nameEng>Birmingham</nameEng>
+                <population>1137100</population>
+            </city>
+            <city number="3">
+                <nameRus>Лидс</nameRus>
+                <nameEng>Leeds</nameEng>
+                <population>781700</population>
+            </city>
+        </cities>
+    </country>
+</countries>

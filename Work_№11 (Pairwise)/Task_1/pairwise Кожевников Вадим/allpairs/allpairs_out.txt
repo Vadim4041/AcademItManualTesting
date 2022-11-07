@@ -1,0 +1,1250 @@
+
+TEST CASES
+case	Country	Length	Width	Height	Weight	Cost	pairings
+1	RF	0	0	0	0	0	15
+2	notRF	0	0.1	0.1	0.1	0.01	15
+3	RF	0.1	0	0.1	5	5000	14
+4	notRF	0.1	0.1	0	9.9	9999.99	14
+5	RF	15	0	12	0.1	9999.99	14
+6	notRF	15	0.1	24.9	0	5000	14
+7	RF	29.9	0	24.9	9.9	0.01	14
+8	notRF	29.9	0.1	12	5	0	14
+9	notRF	30	0	25	10	10000	15
+10	RF	30	0.1	25.1	10.1	10000.01	15
+11	RF	30.1	10	25	10.1	15000	14
+12	notRF	30.1	19.9	25.1	10	19999.99	14
+13	notRF	45	10	32	10	10000.01	14
+14	RF	45	19.9	39.9	10.1	10000	14
+15	RF	59.9	20	32	10.1	19999.99	14
+16	notRF	59.9	20.1	39.9	10	15000	14
+17	RF	60	20	40	10	20000	14
+18	notRF	60	20.1	40.1	10.1	20000.01	14
+19	notRF	60.1	20	40.1	12	0	13
+20	RF	60.1	20.1	40	14.9	0.01	13
+21	RF	0	30	40	12	20000.01	13
+22	notRF	0	39.9	40.1	14.9	20000	13
+23	RF	0.1	30	40.1	15	0.01	12
+24	notRF	0.1	39.9	40	15.1	0	12
+25	notRF	15	30	0	15.1	10000	11
+26	RF	15	39.9	0.1	15	10000.01	11
+27	notRF	29.9	40	0	15	5000	12
+28	RF	29.9	40.1	0.1	15.1	9999.99	12
+29	RF	30	40	0.1	0	15000	11
+30	notRF	30	40.1	0	0.1	19999.99	11
+31	~notRF	30.1	0	32	12	20000	10
+32	~RF	30.1	0.1	39.9	14.9	20000.01	10
+33	~notRF	45	20	0	5	0.01	10
+34	~RF	45	20.1	0.1	9.9	0	10
+35	~RF	59.9	10	0	12	5000	9
+36	~notRF	59.9	19.9	0.1	14.9	9999.99	9
+37	~notRF	60	10	12	0	10000	10
+38	~RF	60	19.9	24.9	0.1	10000.01	10
+39	~notRF	60.1	30	12	9.9	10000.01	10
+40	~RF	60.1	39.9	24.9	5	10000	10
+41	~RF	0	40	12	10	19999.99	9
+42	~notRF	0	40.1	24.9	10.1	15000	9
+43	~RF	0.1	40	25	0.1	20000	10
+44	~notRF	0.1	40.1	25.1	0	20000.01	10
+45	~RF	15	40	25.1	5	0	9
+46	~notRF	15	40.1	25	9.9	0.01	9
+47	~notRF	29.9	10	39.9	0.1	19999.99	9
+48	~RF	29.9	19.9	32	0	15000	9
+49	~notRF	30	10	40	15	9999.99	10
+50	~RF	30	19.9	40.1	15.1	5000	10
+51	~notRF	30.1	40	24.9	15.1	9999.99	9
+52	~RF	30.1	40.1	12	15	5000	9
+53	~notRF	45	0	25.1	14.9	15000	10
+54	~RF	45	0.1	25	12	19999.99	10
+55	~notRF	59.9	30	25	5	9999.99	9
+56	~RF	59.9	39.9	25.1	9.9	5000	9
+57	~notRF	60	30	0.1	10	5000	8
+58	~RF	60	39.9	0	10.1	9999.99	8
+59	~notRF	60.1	10	0.1	10.1	20000	9
+60	~RF	60.1	19.9	0	10	20000.01	9
+61	~RF	0	10	25.1	15.1	0.01	9
+62	~notRF	0	19.9	25	15	0	9
+63	~notRF	0.1	20	39.9	12	10000.01	9
+64	~RF	0.1	20.1	32	14.9	10000	9
+65	~notRF	15	20	32	0.1	20000.01	8
+66	~RF	15	20.1	39.9	0	20000	8
+67	~RF	29.9	20	25	14.9	5000	9
+68	~notRF	29.9	20.1	25.1	12	9999.99	9
+69	~RF	30	30	24.9	14.9	0	10
+70	~notRF	30	39.9	12	12	0.01	10
+71	~notRF	30.1	20	0.1	0	10000	8
+72	~RF	30.1	20.1	0	0.1	10000.01	8
+73	~notRF	45	40	40	9.9	10000	8
+74	~RF	45	40.1	40.1	5	10000.01	8
+75	~notRF	59.9	0	40	10.1	10000.01	8
+76	~RF	59.9	0.1	40.1	10	10000	8
+77	~notRF	60	40	32	5	0.01	8
+78	~RF	60	40.1	39.9	9.9	0	8
+79	~notRF	60.1	0	39.9	15	19999.99	9
+80	~RF	60.1	0.1	32	15.1	15000	9
+81	~RF	0	20	12	15.1	15000	6
+82	~notRF	0	20.1	24.9	15	19999.99	6
+83	~RF	0.1	10	24.9	10	20000.01	7
+84	~notRF	0.1	19.9	12	10.1	20000	7
+85	~notRF	15	10	40.1	14.9	19999.99	8
+86	~RF	15	19.9	40	12	15000	8
+87	~RF	29.9	30	25.1	0.1	20000	7
+88	~notRF	29.9	39.9	25	0	20000.01	7
+89	~RF	30	20	24.9	9.9	20000	7
+90	~notRF	30	20.1	12	5	20000.01	7
+91	~RF	30.1	30	32	9.9	19999.99	6
+92	~notRF	30.1	39.9	39.9	5	15000	6
+93	~notRF	45	30	39.9	15.1	5000	6
+94	~RF	45	39.9	32	15	9999.99	6
+95	~RF	59.9	40	40.1	0	0.01	6
+96	~notRF	59.9	40.1	40	0.1	0	6
+97	~RF	60	0	25	15.1	10000.01	7
+98	~notRF	60	0.1	25.1	15	10000	7
+99	~RF	60.1	40	39.9	12	9999.99	5
+100	~notRF	60.1	40.1	32	14.9	5000	5
+101	~RF	0	20	40	5	5000	4
+102	~notRF	0	20.1	40.1	9.9	9999.99	4
+103	~notRF	29.9	20	40.1	15	15000	4
+104	~RF	29.9	20.1	40	15.1	19999.99	4
+105	~RF	45	10	12	0	20000	3
+106	~notRF	45	19.9	24.9	0.1	20000.01	3
+107	~notRF	59.9	40	0	14.9	10000.01	4
+108	~RF	59.9	40.1	0.1	12	10000	4
+109	~RF	59.9	0	12	15	20000.01	5
+110	~notRF	59.9	0.1	24.9	15.1	20000	5
+111	~RF	30.1	10	40	5	0	4
+112	~notRF	30.1	19.9	40.1	9.9	0.01	4
+113	~notRF	60	30	0	0	15000	4
+114	~RF	60	39.9	0.1	0.1	19999.99	4
+115	~notRF	60.1	40	0.1	10.1	20000.01	3
+116	~RF	60.1	40.1	0	10	20000	3
+117	~RF	0	20	39.9	10	9999.99	3
+118	~notRF	0	20.1	32	10.1	5000	3
+119	~notRF	29.9	0	40.1	10	0	3
+120	~RF	29.9	0.1	40	10.1	0.01	3
+121	~RF	60.1	30	25	0	10000.01	3
+122	~notRF	60.1	39.9	25.1	0.1	10000	3
+123	~RF	0.1	10	40.1	0.1	15000	3
+124	~notRF	0.1	19.9	40	0	19999.99	3
+125	~RF	15	10	24.9	9.9	20000.01	2
+126	~notRF	15	19.9	12	5	20000	2
+127	~RF	30	20	32	15	0	2
+128	~notRF	30	20.1	39.9	15.1	0.01	2
+129	~RF	15	20	25.1	10.1	0	3
+130	~notRF	15	20.1	25	10	0.01	3
+131	~RF	60	30	12	14.9	~0	2
+132	~notRF	60	39.9	24.9	12	~0.01	2
+133	~RF	0	30	~0.1	5	10000	1
+134	~notRF	0	39.9	~0	9.9	10000.01	1
+135	~notRF	29.9	30	~32	0.1	10000	1
+136	~RF	29.9	39.9	~39.9	0	10000.01	1
+137	~notRF	~0.1	30	~25.1	15	20000	1
+138	~RF	~0.1	39.9	~25	15.1	20000.01	1
+139	~notRF	~30	30	~40	0	9999.99	1
+140	~RF	~30	39.9	~40.1	0.1	5000	1
+141	~notRF	~30.1	30	~24.9	10.1	~0	1
+142	~RF	~30.1	39.9	~12	10	~0.01	1
+143	~RF	~45	~0	~0	5	19999.99	1
+144	~notRF	~45	~0.1	~0.1	9.9	15000	1
+
+PAIRING DETAILS
+var1	var2	value1	value2	appearances	cases
+Length	Width	0	0	1	1
+Length	Width	0	0.1	1	2
+Length	Width	0	10	1	61
+Length	Width	0	19.9	1	62
+Length	Width	0	20	3	81, 101, 117
+Length	Width	0	20.1	3	82, 102, 118
+Length	Width	0	30	2	21, 133
+Length	Width	0	39.9	2	22, 134
+Length	Width	0	40	1	41
+Length	Width	0	40.1	1	42
+Length	Width	0.1	0	1	3
+Length	Width	0.1	0.1	1	4
+Length	Width	0.1	10	2	83, 123
+Length	Width	0.1	19.9	2	84, 124
+Length	Width	0.1	20	1	63
+Length	Width	0.1	20.1	1	64
+Length	Width	0.1	30	2	23, 137
+Length	Width	0.1	39.9	2	24, 138
+Length	Width	0.1	40	1	43
+Length	Width	0.1	40.1	1	44
+Length	Width	15	0	1	5
+Length	Width	15	0.1	1	6
+Length	Width	15	10	2	85, 125
+Length	Width	15	19.9	2	86, 126
+Length	Width	15	20	2	65, 129
+Length	Width	15	20.1	2	66, 130
+Length	Width	15	30	1	25
+Length	Width	15	39.9	1	26
+Length	Width	15	40	1	45
+Length	Width	15	40.1	1	46
+Length	Width	29.9	0	2	7, 119
+Length	Width	29.9	0.1	2	8, 120
+Length	Width	29.9	10	1	47
+Length	Width	29.9	19.9	1	48
+Length	Width	29.9	20	2	67, 103
+Length	Width	29.9	20.1	2	68, 104
+Length	Width	29.9	30	2	87, 135
+Length	Width	29.9	39.9	2	88, 136
+Length	Width	29.9	40	1	27
+Length	Width	29.9	40.1	1	28
+Length	Width	30	0	1	9
+Length	Width	30	0.1	1	10
+Length	Width	30	10	1	49
+Length	Width	30	19.9	1	50
+Length	Width	30	20	2	89, 127
+Length	Width	30	20.1	2	90, 128
+Length	Width	30	30	2	69, 139
+Length	Width	30	39.9	2	70, 140
+Length	Width	30	40	1	29
+Length	Width	30	40.1	1	30
+Length	Width	30.1	0	1	31
+Length	Width	30.1	0.1	1	32
+Length	Width	30.1	10	2	11, 111
+Length	Width	30.1	19.9	2	12, 112
+Length	Width	30.1	20	1	71
+Length	Width	30.1	20.1	1	72
+Length	Width	30.1	30	2	91, 141
+Length	Width	30.1	39.9	2	92, 142
+Length	Width	30.1	40	1	51
+Length	Width	30.1	40.1	1	52
+Length	Width	45	0	2	53, 143
+Length	Width	45	0.1	2	54, 144
+Length	Width	45	10	2	13, 105
+Length	Width	45	19.9	2	14, 106
+Length	Width	45	20	1	33
+Length	Width	45	20.1	1	34
+Length	Width	45	30	1	93
+Length	Width	45	39.9	1	94
+Length	Width	45	40	1	73
+Length	Width	45	40.1	1	74
+Length	Width	59.9	0	2	75, 109
+Length	Width	59.9	0.1	2	76, 110
+Length	Width	59.9	10	1	35
+Length	Width	59.9	19.9	1	36
+Length	Width	59.9	20	1	15
+Length	Width	59.9	20.1	1	16
+Length	Width	59.9	30	1	55
+Length	Width	59.9	39.9	1	56
+Length	Width	59.9	40	2	95, 107
+Length	Width	59.9	40.1	2	96, 108
+Length	Width	60	0	1	97
+Length	Width	60	0.1	1	98
+Length	Width	60	10	1	37
+Length	Width	60	19.9	1	38
+Length	Width	60	20	1	17
+Length	Width	60	20.1	1	18
+Length	Width	60	30	3	57, 113, 131
+Length	Width	60	39.9	3	58, 114, 132
+Length	Width	60	40	1	77
+Length	Width	60	40.1	1	78
+Length	Width	60.1	0	1	79
+Length	Width	60.1	0.1	1	80
+Length	Width	60.1	10	1	59
+Length	Width	60.1	19.9	1	60
+Length	Width	60.1	20	1	19
+Length	Width	60.1	20.1	1	20
+Length	Width	60.1	30	2	39, 121
+Length	Width	60.1	39.9	2	40, 122
+Length	Width	60.1	40	2	99, 115
+Length	Width	60.1	40.1	2	100, 116
+Length	Height	0	0	2	1, 134
+Length	Height	0	0.1	2	2, 133
+Length	Height	0	12	2	41, 81
+Length	Height	0	24.9	2	42, 82
+Length	Height	0	25	1	62
+Length	Height	0	25.1	1	61
+Length	Height	0	32	1	118
+Length	Height	0	39.9	1	117
+Length	Height	0	40	2	21, 101
+Length	Height	0	40.1	2	22, 102
+Length	Height	0.1	0	1	4
+Length	Height	0.1	0.1	1	3
+Length	Height	0.1	12	1	84
+Length	Height	0.1	24.9	1	83
+Length	Height	0.1	25	2	43, 138
+Length	Height	0.1	25.1	2	44, 137
+Length	Height	0.1	32	1	64
+Length	Height	0.1	39.9	1	63
+Length	Height	0.1	40	2	24, 124
+Length	Height	0.1	40.1	2	23, 123
+Length	Height	15	0	1	25
+Length	Height	15	0.1	1	26
+Length	Height	15	12	2	5, 126
+Length	Height	15	24.9	2	6, 125
+Length	Height	15	25	2	46, 130
+Length	Height	15	25.1	2	45, 129
+Length	Height	15	32	1	65
+Length	Height	15	39.9	1	66
+Length	Height	15	40	1	86
+Length	Height	15	40.1	1	85
+Length	Height	29.9	0	1	27
+Length	Height	29.9	0.1	1	28
+Length	Height	29.9	12	1	8
+Length	Height	29.9	24.9	1	7
+Length	Height	29.9	25	2	67, 88
+Length	Height	29.9	25.1	2	68, 87
+Length	Height	29.9	32	2	48, 135
+Length	Height	29.9	39.9	2	47, 136
+Length	Height	29.9	40	2	104, 120
+Length	Height	29.9	40.1	2	103, 119
+Length	Height	30	0	1	30
+Length	Height	30	0.1	1	29
+Length	Height	30	12	2	70, 90
+Length	Height	30	24.9	2	69, 89
+Length	Height	30	25	1	9
+Length	Height	30	25.1	1	10
+Length	Height	30	32	1	127
+Length	Height	30	39.9	1	128
+Length	Height	30	40	2	49, 139
+Length	Height	30	40.1	2	50, 140
+Length	Height	30.1	0	1	72
+Length	Height	30.1	0.1	1	71
+Length	Height	30.1	12	2	52, 142
+Length	Height	30.1	24.9	2	51, 141
+Length	Height	30.1	25	1	11
+Length	Height	30.1	25.1	1	12
+Length	Height	30.1	32	2	31, 91
+Length	Height	30.1	39.9	2	32, 92
+Length	Height	30.1	40	1	111
+Length	Height	30.1	40.1	1	112
+Length	Height	45	0	2	33, 143
+Length	Height	45	0.1	2	34, 144
+Length	Height	45	12	1	105
+Length	Height	45	24.9	1	106
+Length	Height	45	25	1	54
+Length	Height	45	25.1	1	53
+Length	Height	45	32	2	13, 94
+Length	Height	45	39.9	2	14, 93
+Length	Height	45	40	1	73
+Length	Height	45	40.1	1	74
+Length	Height	59.9	0	2	35, 107
+Length	Height	59.9	0.1	2	36, 108
+Length	Height	59.9	12	1	109
+Length	Height	59.9	24.9	1	110
+Length	Height	59.9	25	1	55
+Length	Height	59.9	25.1	1	56
+Length	Height	59.9	32	1	15
+Length	Height	59.9	39.9	1	16
+Length	Height	59.9	40	2	75, 96
+Length	Height	59.9	40.1	2	76, 95
+Length	Height	60	0	2	58, 113
+Length	Height	60	0.1	2	57, 114
+Length	Height	60	12	2	37, 131
+Length	Height	60	24.9	2	38, 132
+Length	Height	60	25	1	97
+Length	Height	60	25.1	1	98
+Length	Height	60	32	1	77
+Length	Height	60	39.9	1	78
+Length	Height	60	40	1	17
+Length	Height	60	40.1	1	18
+Length	Height	60.1	0	2	60, 116
+Length	Height	60.1	0.1	2	59, 115
+Length	Height	60.1	12	1	39
+Length	Height	60.1	24.9	1	40
+Length	Height	60.1	25	1	121
+Length	Height	60.1	25.1	1	122
+Length	Height	60.1	32	2	80, 100
+Length	Height	60.1	39.9	2	79, 99
+Length	Height	60.1	40	1	20
+Length	Height	60.1	40.1	1	19
+Length	Weight	0	0	1	1
+Length	Weight	0	0.1	1	2
+Length	Weight	0	5	2	101, 133
+Length	Weight	0	9.9	2	102, 134
+Length	Weight	0	10	2	41, 117
+Length	Weight	0	10.1	2	42, 118
+Length	Weight	0	12	1	21
+Length	Weight	0	14.9	1	22
+Length	Weight	0	15	2	62, 82
+Length	Weight	0	15.1	2	61, 81
+Length	Weight	0.1	0	2	44, 124
+Length	Weight	0.1	0.1	2	43, 123
+Length	Weight	0.1	5	1	3
+Length	Weight	0.1	9.9	1	4
+Length	Weight	0.1	10	1	83
+Length	Weight	0.1	10.1	1	84
+Length	Weight	0.1	12	1	63
+Length	Weight	0.1	14.9	1	64
+Length	Weight	0.1	15	2	23, 137
+Length	Weight	0.1	15.1	2	24, 138
+Length	Weight	15	0	2	6, 66
+Length	Weight	15	0.1	2	5, 65
+Length	Weight	15	5	2	45, 126
+Length	Weight	15	9.9	2	46, 125
+Length	Weight	15	10	1	130
+Length	Weight	15	10.1	1	129
+Length	Weight	15	12	1	86
+Length	Weight	15	14.9	1	85
+Length	Weight	15	15	1	26
+Length	Weight	15	15.1	1	25
+Length	Weight	29.9	0	3	48, 88, 136
+Length	Weight	29.9	0.1	3	47, 87, 135
+Length	Weight	29.9	5	1	8
+Length	Weight	29.9	9.9	1	7
+Length	Weight	29.9	10	1	119
+Length	Weight	29.9	10.1	1	120
+Length	Weight	29.9	12	1	68
+Length	Weight	29.9	14.9	1	67
+Length	Weight	29.9	15	2	27, 103
+Length	Weight	29.9	15.1	2	28, 104
+Length	Weight	30	0	2	29, 139
+Length	Weight	30	0.1	2	30, 140
+Length	Weight	30	5	1	90
+Length	Weight	30	9.9	1	89
+Length	Weight	30	10	1	9
+Length	Weight	30	10.1	1	10
+Length	Weight	30	12	1	70
+Length	Weight	30	14.9	1	69
+Length	Weight	30	15	2	49, 127
+Length	Weight	30	15.1	2	50, 128
+Length	Weight	30.1	0	1	71
+Length	Weight	30.1	0.1	1	72
+Length	Weight	30.1	5	2	92, 111
+Length	Weight	30.1	9.9	2	91, 112
+Length	Weight	30.1	10	2	12, 142
+Length	Weight	30.1	10.1	2	11, 141
+Length	Weight	30.1	12	1	31
+Length	Weight	30.1	14.9	1	32
+Length	Weight	30.1	15	1	52
+Length	Weight	30.1	15.1	1	51
+Length	Weight	45	0	1	105
+Length	Weight	45	0.1	1	106
+Length	Weight	45	5	3	33, 74, 143
+Length	Weight	45	9.9	3	34, 73, 144
+Length	Weight	45	10	1	13
+Length	Weight	45	10.1	1	14
+Length	Weight	45	12	1	54
+Length	Weight	45	14.9	1	53
+Length	Weight	45	15	1	94
+Length	Weight	45	15.1	1	93
+Length	Weight	59.9	0	1	95
+Length	Weight	59.9	0.1	1	96
+Length	Weight	59.9	5	1	55
+Length	Weight	59.9	9.9	1	56
+Length	Weight	59.9	10	2	16, 76
+Length	Weight	59.9	10.1	2	15, 75
+Length	Weight	59.9	12	2	35, 108
+Length	Weight	59.9	14.9	2	36, 107
+Length	Weight	59.9	15	1	109
+Length	Weight	59.9	15.1	1	110
+Length	Weight	60	0	2	37, 113
+Length	Weight	60	0.1	2	38, 114
+Length	Weight	60	5	1	77
+Length	Weight	60	9.9	1	78
+Length	Weight	60	10	2	17, 57
+Length	Weight	60	10.1	2	18, 58
+Length	Weight	60	12	1	132
+Length	Weight	60	14.9	1	131
+Length	Weight	60	15	1	98
+Length	Weight	60	15.1	1	97
+Length	Weight	60.1	0	1	121
+Length	Weight	60.1	0.1	1	122
+Length	Weight	60.1	5	1	40
+Length	Weight	60.1	9.9	1	39
+Length	Weight	60.1	10	2	60, 116
+Length	Weight	60.1	10.1	2	59, 115
+Length	Weight	60.1	12	2	19, 99
+Length	Weight	60.1	14.9	2	20, 100
+Length	Weight	60.1	15	1	79
+Length	Weight	60.1	15.1	1	80
+Length	Cost	0	0	2	1, 62
+Length	Cost	0	0.01	2	2, 61
+Length	Cost	0	5000	2	101, 118
+Length	Cost	0	9999.99	2	102, 117
+Length	Cost	0	10000	1	133
+Length	Cost	0	10000.01	1	134
+Length	Cost	0	15000	2	42, 81
+Length	Cost	0	19999.99	2	41, 82
+Length	Cost	0	20000	1	22
+Length	Cost	0	20000.01	1	21
+Length	Cost	0.1	0	1	24
+Length	Cost	0.1	0.01	1	23
+Length	Cost	0.1	5000	1	3
+Length	Cost	0.1	9999.99	1	4
+Length	Cost	0.1	10000	1	64
+Length	Cost	0.1	10000.01	1	63
+Length	Cost	0.1	15000	1	123
+Length	Cost	0.1	19999.99	1	124
+Length	Cost	0.1	20000	3	43, 84, 137
+Length	Cost	0.1	20000.01	3	44, 83, 138
+Length	Cost	15	0	2	45, 129
+Length	Cost	15	0.01	2	46, 130
+Length	Cost	15	5000	1	6
+Length	Cost	15	9999.99	1	5
+Length	Cost	15	10000	1	25
+Length	Cost	15	10000.01	1	26
+Length	Cost	15	15000	1	86
+Length	Cost	15	19999.99	1	85
+Length	Cost	15	20000	2	66, 126
+Length	Cost	15	20000.01	2	65, 125
+Length	Cost	29.9	0	2	8, 119
+Length	Cost	29.9	0.01	2	7, 120
+Length	Cost	29.9	5000	2	27, 67
+Length	Cost	29.9	9999.99	2	28, 68
+Length	Cost	29.9	10000	1	135
+Length	Cost	29.9	10000.01	1	136
+Length	Cost	29.9	15000	2	48, 103
+Length	Cost	29.9	19999.99	2	47, 104
+Length	Cost	29.9	20000	1	87
+Length	Cost	29.9	20000.01	1	88
+Length	Cost	30	0	2	69, 127
+Length	Cost	30	0.01	2	70, 128
+Length	Cost	30	5000	2	50, 140
+Length	Cost	30	9999.99	2	49, 139
+Length	Cost	30	10000	1	9
+Length	Cost	30	10000.01	1	10
+Length	Cost	30	15000	1	29
+Length	Cost	30	19999.99	1	30
+Length	Cost	30	20000	1	89
+Length	Cost	30	20000.01	1	90
+Length	Cost	30.1	0	2	111, 141
+Length	Cost	30.1	0.01	2	112, 142
+Length	Cost	30.1	5000	1	52
+Length	Cost	30.1	9999.99	1	51
+Length	Cost	30.1	10000	1	71
+Length	Cost	30.1	10000.01	1	72
+Length	Cost	30.1	15000	2	11, 92
+Length	Cost	30.1	19999.99	2	12, 91
+Length	Cost	30.1	20000	1	31
+Length	Cost	30.1	20000.01	1	32
+Length	Cost	45	0	1	34
+Length	Cost	45	0.01	1	33
+Length	Cost	45	5000	1	93
+Length	Cost	45	9999.99	1	94
+Length	Cost	45	10000	2	14, 73
+Length	Cost	45	10000.01	2	13, 74
+Length	Cost	45	15000	2	53, 144
+Length	Cost	45	19999.99	2	54, 143
+Length	Cost	45	20000	1	105
+Length	Cost	45	20000.01	1	106
+Length	Cost	59.9	0	1	96
+Length	Cost	59.9	0.01	1	95
+Length	Cost	59.9	5000	2	35, 56
+Length	Cost	59.9	9999.99	2	36, 55
+Length	Cost	59.9	10000	2	76, 108
+Length	Cost	59.9	10000.01	2	75, 107
+Length	Cost	59.9	15000	1	16
+Length	Cost	59.9	19999.99	1	15
+Length	Cost	59.9	20000	1	110
+Length	Cost	59.9	20000.01	1	109
+Length	Cost	60	0	2	78, 131
+Length	Cost	60	0.01	2	77, 132
+Length	Cost	60	5000	1	57
+Length	Cost	60	9999.99	1	58
+Length	Cost	60	10000	2	37, 98
+Length	Cost	60	10000.01	2	38, 97
+Length	Cost	60	15000	1	113
+Length	Cost	60	19999.99	1	114
+Length	Cost	60	20000	1	17
+Length	Cost	60	20000.01	1	18
+Length	Cost	60.1	0	1	19
+Length	Cost	60.1	0.01	1	20
+Length	Cost	60.1	5000	1	100
+Length	Cost	60.1	9999.99	1	99
+Length	Cost	60.1	10000	2	40, 122
+Length	Cost	60.1	10000.01	2	39, 121
+Length	Cost	60.1	15000	1	80
+Length	Cost	60.1	19999.99	1	79
+Length	Cost	60.1	20000	2	59, 116
+Length	Cost	60.1	20000.01	2	60, 115
+Length	Country	0	RF	8	1, 21, 41, 61, 81, 101, 117, 133
+Length	Country	0	notRF	8	2, 22, 42, 62, 82, 102, 118, 134
+Length	Country	0.1	RF	7	3, 23, 43, 64, 83, 123, 138
+Length	Country	0.1	notRF	7	4, 24, 44, 63, 84, 124, 137
+Length	Country	15	RF	7	5, 26, 45, 66, 86, 125, 129
+Length	Country	15	notRF	7	6, 25, 46, 65, 85, 126, 130
+Length	Country	29.9	RF	8	7, 28, 48, 67, 87, 104, 120, 136
+Length	Country	29.9	notRF	8	8, 27, 47, 68, 88, 103, 119, 135
+Length	Country	30	RF	7	10, 29, 50, 69, 89, 127, 140
+Length	Country	30	notRF	7	9, 30, 49, 70, 90, 128, 139
+Length	Country	30.1	RF	7	11, 32, 52, 72, 91, 111, 142
+Length	Country	30.1	notRF	7	12, 31, 51, 71, 92, 112, 141
+Length	Country	45	RF	7	14, 34, 54, 74, 94, 105, 143
+Length	Country	45	notRF	7	13, 33, 53, 73, 93, 106, 144
+Length	Country	59.9	RF	7	15, 35, 56, 76, 95, 108, 109
+Length	Country	59.9	notRF	7	16, 36, 55, 75, 96, 107, 110
+Length	Country	60	RF	7	17, 38, 58, 78, 97, 114, 131
+Length	Country	60	notRF	7	18, 37, 57, 77, 98, 113, 132
+Length	Country	60.1	RF	7	20, 40, 60, 80, 99, 116, 121
+Length	Country	60.1	notRF	7	19, 39, 59, 79, 100, 115, 122
+Width	Height	0	0	2	1, 143
+Width	Height	0	0.1	1	3
+Width	Height	0	12	2	5, 109
+Width	Height	0	24.9	1	7
+Width	Height	0	25	2	9, 97
+Width	Height	0	25.1	1	53
+Width	Height	0	32	1	31
+Width	Height	0	39.9	1	79
+Width	Height	0	40	1	75
+Width	Height	0	40.1	1	119
+Width	Height	0.1	0	1	4
+Width	Height	0.1	0.1	2	2, 144
+Width	Height	0.1	12	1	8
+Width	Height	0.1	24.9	2	6, 110
+Width	Height	0.1	25	1	54
+Width	Height	0.1	25.1	2	10, 98
+Width	Height	0.1	32	1	80
+Width	Height	0.1	39.9	1	32
+Width	Height	0.1	40	1	120
+Width	Height	0.1	40.1	1	76
+Width	Height	10	0	1	35
+Width	Height	10	0.1	1	59
+Width	Height	10	12	2	37, 105
+Width	Height	10	24.9	2	83, 125
+Width	Height	10	25	1	11
+Width	Height	10	25.1	1	61
+Width	Height	10	32	1	13
+Width	Height	10	39.9	1	47
+Width	Height	10	40	2	49, 111
+Width	Height	10	40.1	2	85, 123
+Width	Height	19.9	0	1	60
+Width	Height	19.9	0.1	1	36
+Width	Height	19.9	12	2	84, 126
+Width	Height	19.9	24.9	2	38, 106
+Width	Height	19.9	25	1	62
+Width	Height	19.9	25.1	1	12
+Width	Height	19.9	32	1	48
+Width	Height	19.9	39.9	1	14
+Width	Height	19.9	40	2	86, 124
+Width	Height	19.9	40.1	2	50, 112
+Width	Height	20	0	1	33
+Width	Height	20	0.1	1	71
+Width	Height	20	12	1	81
+Width	Height	20	24.9	1	89
+Width	Height	20	25	1	67
+Width	Height	20	25.1	1	129
+Width	Height	20	32	3	15, 65, 127
+Width	Height	20	39.9	2	63, 117
+Width	Height	20	40	2	17, 101
+Width	Height	20	40.1	2	19, 103
+Width	Height	20.1	0	1	72
+Width	Height	20.1	0.1	1	34
+Width	Height	20.1	12	1	90
+Width	Height	20.1	24.9	1	82
+Width	Height	20.1	25	1	130
+Width	Height	20.1	25.1	1	68
+Width	Height	20.1	32	2	64, 118
+Width	Height	20.1	39.9	3	16, 66, 128
+Width	Height	20.1	40	2	20, 104
+Width	Height	20.1	40.1	2	18, 102
+Width	Height	30	0	2	25, 113
+Width	Height	30	0.1	2	57, 133
+Width	Height	30	12	2	39, 131
+Width	Height	30	24.9	2	69, 141
+Width	Height	30	25	2	55, 121
+Width	Height	30	25.1	2	87, 137
+Width	Height	30	32	2	91, 135
+Width	Height	30	39.9	1	93
+Width	Height	30	40	2	21, 139
+Width	Height	30	40.1	1	23
+Width	Height	39.9	0	2	58, 134
+Width	Height	39.9	0.1	2	26, 114
+Width	Height	39.9	12	2	70, 142
+Width	Height	39.9	24.9	2	40, 132
+Width	Height	39.9	25	2	88, 138
+Width	Height	39.9	25.1	2	56, 122
+Width	Height	39.9	32	1	94
+Width	Height	39.9	39.9	2	92, 136
+Width	Height	39.9	40	1	24
+Width	Height	39.9	40.1	2	22, 140
+Width	Height	40	0	2	27, 107
+Width	Height	40	0.1	2	29, 115
+Width	Height	40	12	1	41
+Width	Height	40	24.9	1	51
+Width	Height	40	25	1	43
+Width	Height	40	25.1	1	45
+Width	Height	40	32	1	77
+Width	Height	40	39.9	1	99
+Width	Height	40	40	1	73
+Width	Height	40	40.1	1	95
+Width	Height	40.1	0	2	30, 116
+Width	Height	40.1	0.1	2	28, 108
+Width	Height	40.1	12	1	52
+Width	Height	40.1	24.9	1	42
+Width	Height	40.1	25	1	46
+Width	Height	40.1	25.1	1	44
+Width	Height	40.1	32	1	100
+Width	Height	40.1	39.9	1	78
+Width	Height	40.1	40	1	96
+Width	Height	40.1	40.1	1	74
+Width	Weight	0	0	1	1
+Width	Weight	0	0.1	1	5
+Width	Weight	0	5	2	3, 143
+Width	Weight	0	9.9	1	7
+Width	Weight	0	10	2	9, 119
+Width	Weight	0	10.1	1	75
+Width	Weight	0	12	1	31
+Width	Weight	0	14.9	1	53
+Width	Weight	0	15	2	79, 109
+Width	Weight	0	15.1	1	97
+Width	Weight	0.1	0	1	6
+Width	Weight	0.1	0.1	1	2
+Width	Weight	0.1	5	1	8
+Width	Weight	0.1	9.9	2	4, 144
+Width	Weight	0.1	10	1	76
+Width	Weight	0.1	10.1	2	10, 120
+Width	Weight	0.1	12	1	54
+Width	Weight	0.1	14.9	1	32
+Width	Weight	0.1	15	1	98
+Width	Weight	0.1	15.1	2	80, 110
+Width	Weight	10	0	2	37, 105
+Width	Weight	10	0.1	2	47, 123
+Width	Weight	10	5	1	111
+Width	Weight	10	9.9	1	125
+Width	Weight	10	10	2	13, 83
+Width	Weight	10	10.1	2	11, 59
+Width	Weight	10	12	1	35
+Width	Weight	10	14.9	1	85
+Width	Weight	10	15	1	49
+Width	Weight	10	15.1	1	61
+Width	Weight	19.9	0	2	48, 124
+Width	Weight	19.9	0.1	2	38, 106
+Width	Weight	19.9	5	1	126
+Width	Weight	19.9	9.9	1	112
+Width	Weight	19.9	10	2	12, 60
+Width	Weight	19.9	10.1	2	14, 84
+Width	Weight	19.9	12	1	86
+Width	Weight	19.9	14.9	1	36
+Width	Weight	19.9	15	1	62
+Width	Weight	19.9	15.1	1	50
+Width	Weight	20	0	1	71
+Width	Weight	20	0.1	1	65
+Width	Weight	20	5	2	33, 101
+Width	Weight	20	9.9	1	89
+Width	Weight	20	10	2	17, 117
+Width	Weight	20	10.1	2	15, 129
+Width	Weight	20	12	2	19, 63
+Width	Weight	20	14.9	1	67
+Width	Weight	20	15	2	103, 127
+Width	Weight	20	15.1	1	81
+Width	Weight	20.1	0	1	66
+Width	Weight	20.1	0.1	1	72
+Width	Weight	20.1	5	1	90
+Width	Weight	20.1	9.9	2	34, 102
+Width	Weight	20.1	10	2	16, 130
+Width	Weight	20.1	10.1	2	18, 118
+Width	Weight	20.1	12	1	68
+Width	Weight	20.1	14.9	2	20, 64
+Width	Weight	20.1	15	1	82
+Width	Weight	20.1	15.1	2	104, 128
+Width	Weight	30	0	3	113, 121, 139
+Width	Weight	30	0.1	2	87, 135
+Width	Weight	30	5	2	55, 133
+Width	Weight	30	9.9	2	39, 91
+Width	Weight	30	10	1	57
+Width	Weight	30	10.1	1	141
+Width	Weight	30	12	1	21
+Width	Weight	30	14.9	2	69, 131
+Width	Weight	30	15	2	23, 137
+Width	Weight	30	15.1	2	25, 93
+Width	Weight	39.9	0	2	88, 136
+Width	Weight	39.9	0.1	3	114, 122, 140
+Width	Weight	39.9	5	2	40, 92
+Width	Weight	39.9	9.9	2	56, 134
+Width	Weight	39.9	10	1	142
+Width	Weight	39.9	10.1	1	58
+Width	Weight	39.9	12	2	70, 132
+Width	Weight	39.9	14.9	1	22
+Width	Weight	39.9	15	2	26, 94
+Width	Weight	39.9	15.1	2	24, 138
+Width	Weight	40	0	2	29, 95
+Width	Weight	40	0.1	1	43
+Width	Weight	40	5	2	45, 77
+Width	Weight	40	9.9	1	73
+Width	Weight	40	10	1	41
+Width	Weight	40	10.1	1	115
+Width	Weight	40	12	1	99
+Width	Weight	40	14.9	1	107
+Width	Weight	40	15	1	27
+Width	Weight	40	15.1	1	51
+Width	Weight	40.1	0	1	44
+Width	Weight	40.1	0.1	2	30, 96
+Width	Weight	40.1	5	1	74
+Width	Weight	40.1	9.9	2	46, 78
+Width	Weight	40.1	10	1	116
+Width	Weight	40.1	10.1	1	42
+Width	Weight	40.1	12	1	108
+Width	Weight	40.1	14.9	1	100
+Width	Weight	40.1	15	1	52
+Width	Weight	40.1	15.1	1	28
+Width	Cost	0	0	2	1, 119
+Width	Cost	0	0.01	1	7
+Width	Cost	0	5000	1	3
+Width	Cost	0	9999.99	1	5
+Width	Cost	0	10000	1	9
+Width	Cost	0	10000.01	2	75, 97
+Width	Cost	0	15000	1	53
+Width	Cost	0	19999.99	2	79, 143
+Width	Cost	0	20000	1	31
+Width	Cost	0	20000.01	1	109
+Width	Cost	0.1	0	1	8
+Width	Cost	0.1	0.01	2	2, 120
+Width	Cost	0.1	5000	1	6
+Width	Cost	0.1	9999.99	1	4
+Width	Cost	0.1	10000	2	76, 98
+Width	Cost	0.1	10000.01	1	10
+Width	Cost	0.1	15000	2	80, 144
+Width	Cost	0.1	19999.99	1	54
+Width	Cost	0.1	20000	1	110
+Width	Cost	0.1	20000.01	1	32
+Width	Cost	10	0	1	111
+Width	Cost	10	0.01	1	61
+Width	Cost	10	5000	1	35
+Width	Cost	10	9999.99	1	49
+Width	Cost	10	10000	1	37
+Width	Cost	10	10000.01	1	13
+Width	Cost	10	15000	2	11, 123
+Width	Cost	10	19999.99	2	47, 85
+Width	Cost	10	20000	2	59, 105
+Width	Cost	10	20000.01	2	83, 125
+Width	Cost	19.9	0	1	62
+Width	Cost	19.9	0.01	1	112
+Width	Cost	19.9	5000	1	50
+Width	Cost	19.9	9999.99	1	36
+Width	Cost	19.9	10000	1	14
+Width	Cost	19.9	10000.01	1	38
+Width	Cost	19.9	15000	2	48, 86
+Width	Cost	19.9	19999.99	2	12, 124
+Width	Cost	19.9	20000	2	84, 126
+Width	Cost	19.9	20000.01	2	60, 106
+Width	Cost	20	0	3	19, 127, 129
+Width	Cost	20	0.01	1	33
+Width	Cost	20	5000	2	67, 101
+Width	Cost	20	9999.99	1	117
+Width	Cost	20	10000	1	71
+Width	Cost	20	10000.01	1	63
+Width	Cost	20	15000	2	81, 103
+Width	Cost	20	19999.99	1	15
+Width	Cost	20	20000	2	17, 89
+Width	Cost	20	20000.01	1	65
+Width	Cost	20.1	0	1	34
+Width	Cost	20.1	0.01	3	20, 128, 130
+Width	Cost	20.1	5000	1	118
+Width	Cost	20.1	9999.99	2	68, 102
+Width	Cost	20.1	10000	1	64
+Width	Cost	20.1	10000.01	1	72
+Width	Cost	20.1	15000	1	16
+Width	Cost	20.1	19999.99	2	82, 104
+Width	Cost	20.1	20000	1	66
+Width	Cost	20.1	20000.01	2	18, 90
+Width	Cost	30	0	3	69, 131, 141
+Width	Cost	30	0.01	1	23
+Width	Cost	30	5000	2	57, 93
+Width	Cost	30	9999.99	2	55, 139
+Width	Cost	30	10000	3	25, 133, 135
+Width	Cost	30	10000.01	2	39, 121
+Width	Cost	30	15000	1	113
+Width	Cost	30	19999.99	1	91
+Width	Cost	30	20000	2	87, 137
+Width	Cost	30	20000.01	1	21
+Width	Cost	39.9	0	1	24
+Width	Cost	39.9	0.01	3	70, 132, 142
+Width	Cost	39.9	5000	2	56, 140
+Width	Cost	39.9	9999.99	2	58, 94
+Width	Cost	39.9	10000	2	40, 122
+Width	Cost	39.9	10000.01	3	26, 134, 136
+Width	Cost	39.9	15000	1	92
+Width	Cost	39.9	19999.99	1	114
+Width	Cost	39.9	20000	1	22
+Width	Cost	39.9	20000.01	2	88, 138
+Width	Cost	40	0	1	45
+Width	Cost	40	0.01	2	77, 95
+Width	Cost	40	5000	1	27
+Width	Cost	40	9999.99	2	51, 99
+Width	Cost	40	10000	1	73
+Width	Cost	40	10000.01	1	107
+Width	Cost	40	15000	1	29
+Width	Cost	40	19999.99	1	41
+Width	Cost	40	20000	1	43
+Width	Cost	40	20000.01	1	115
+Width	Cost	40.1	0	2	78, 96
+Width	Cost	40.1	0.01	1	46
+Width	Cost	40.1	5000	2	52, 100
+Width	Cost	40.1	9999.99	1	28
+Width	Cost	40.1	10000	1	108
+Width	Cost	40.1	10000.01	1	74
+Width	Cost	40.1	15000	1	42
+Width	Cost	40.1	19999.99	1	30
+Width	Cost	40.1	20000	1	116
+Width	Cost	40.1	20000.01	1	44
+Width	Country	0	RF	7	1, 3, 5, 7, 97, 109, 143
+Width	Country	0	notRF	6	9, 31, 53, 75, 79, 119
+Width	Country	0.1	RF	6	10, 32, 54, 76, 80, 120
+Width	Country	0.1	notRF	7	2, 4, 6, 8, 98, 110, 144
+Width	Country	10	RF	8	11, 35, 61, 83, 105, 111, 123, 125
+Width	Country	10	notRF	6	13, 37, 47, 49, 59, 85
+Width	Country	19.9	RF	6	14, 38, 48, 50, 60, 86
+Width	Country	19.9	notRF	8	12, 36, 62, 84, 106, 112, 124, 126
+Width	Country	20	RF	9	15, 17, 67, 81, 89, 101, 117, 127, 129
+Width	Country	20	notRF	6	19, 33, 63, 65, 71, 103
+Width	Country	20.1	RF	6	20, 34, 64, 66, 72, 104
+Width	Country	20.1	notRF	9	16, 18, 68, 82, 90, 102, 118, 128, 130
+Width	Country	30	RF	8	21, 23, 69, 87, 91, 121, 131, 133
+Width	Country	30	notRF	10	25, 39, 55, 57, 93, 113, 135, 137, 139, 141
+Width	Country	39.9	RF	10	26, 40, 56, 58, 94, 114, 136, 138, 140, 142
+Width	Country	39.9	notRF	8	22, 24, 70, 88, 92, 122, 132, 134
+Width	Country	40	RF	6	29, 41, 43, 45, 95, 99
+Width	Country	40	notRF	6	27, 51, 73, 77, 107, 115
+Width	Country	40.1	RF	6	28, 52, 74, 78, 108, 116
+Width	Country	40.1	notRF	6	30, 42, 44, 46, 96, 100
+Height	Weight	0	0	2	1, 113
+Height	Weight	0	0.1	2	30, 72
+Height	Weight	0	5	2	33, 143
+Height	Weight	0	9.9	2	4, 134
+Height	Weight	0	10	2	60, 116
+Height	Weight	0	10.1	1	58
+Height	Weight	0	12	1	35
+Height	Weight	0	14.9	1	107
+Height	Weight	0	15	1	27
+Height	Weight	0	15.1	1	25
+Height	Weight	0.1	0	2	29, 71
+Height	Weight	0.1	0.1	2	2, 114
+Height	Weight	0.1	5	2	3, 133
+Height	Weight	0.1	9.9	2	34, 144
+Height	Weight	0.1	10	1	57
+Height	Weight	0.1	10.1	2	59, 115
+Height	Weight	0.1	12	1	108
+Height	Weight	0.1	14.9	1	36
+Height	Weight	0.1	15	1	26
+Height	Weight	0.1	15.1	1	28
+Height	Weight	12	0	2	37, 105
+Height	Weight	12	0.1	1	5
+Height	Weight	12	5	3	8, 90, 126
+Height	Weight	12	9.9	1	39
+Height	Weight	12	10	2	41, 142
+Height	Weight	12	10.1	1	84
+Height	Weight	12	12	1	70
+Height	Weight	12	14.9	1	131
+Height	Weight	12	15	2	52, 109
+Height	Weight	12	15.1	1	81
+Height	Weight	24.9	0	1	6
+Height	Weight	24.9	0.1	2	38, 106
+Height	Weight	24.9	5	1	40
+Height	Weight	24.9	9.9	3	7, 89, 125
+Height	Weight	24.9	10	1	83
+Height	Weight	24.9	10.1	2	42, 141
+Height	Weight	24.9	12	1	132
+Height	Weight	24.9	14.9	1	69
+Height	Weight	24.9	15	1	82
+Height	Weight	24.9	15.1	2	51, 110
+Height	Weight	25	0	2	88, 121
+Height	Weight	25	0.1	1	43
+Height	Weight	25	5	1	55
+Height	Weight	25	9.9	1	46
+Height	Weight	25	10	2	9, 130
+Height	Weight	25	10.1	1	11
+Height	Weight	25	12	1	54
+Height	Weight	25	14.9	1	67
+Height	Weight	25	15	1	62
+Height	Weight	25	15.1	2	97, 138
+Height	Weight	25.1	0	1	44
+Height	Weight	25.1	0.1	2	87, 122
+Height	Weight	25.1	5	1	45
+Height	Weight	25.1	9.9	1	56
+Height	Weight	25.1	10	1	12
+Height	Weight	25.1	10.1	2	10, 129
+Height	Weight	25.1	12	1	68
+Height	Weight	25.1	14.9	1	53
+Height	Weight	25.1	15	2	98, 137
+Height	Weight	25.1	15.1	1	61
+Height	Weight	32	0	1	48
+Height	Weight	32	0.1	2	65, 135
+Height	Weight	32	5	1	77
+Height	Weight	32	9.9	1	91
+Height	Weight	32	10	1	13
+Height	Weight	32	10.1	2	15, 118
+Height	Weight	32	12	1	31
+Height	Weight	32	14.9	2	64, 100
+Height	Weight	32	15	2	94, 127
+Height	Weight	32	15.1	1	80
+Height	Weight	39.9	0	2	66, 136
+Height	Weight	39.9	0.1	1	47
+Height	Weight	39.9	5	1	92
+Height	Weight	39.9	9.9	1	78
+Height	Weight	39.9	10	2	16, 117
+Height	Weight	39.9	10.1	1	14
+Height	Weight	39.9	12	2	63, 99
+Height	Weight	39.9	14.9	1	32
+Height	Weight	39.9	15	1	79
+Height	Weight	39.9	15.1	2	93, 128
+Height	Weight	40	0	2	124, 139
+Height	Weight	40	0.1	1	96
+Height	Weight	40	5	2	101, 111
+Height	Weight	40	9.9	1	73
+Height	Weight	40	10	1	17
+Height	Weight	40	10.1	2	75, 120
+Height	Weight	40	12	2	21, 86
+Height	Weight	40	14.9	1	20
+Height	Weight	40	15	1	49
+Height	Weight	40	15.1	2	24, 104
+Height	Weight	40.1	0	1	95
+Height	Weight	40.1	0.1	2	123, 140
+Height	Weight	40.1	5	1	74
+Height	Weight	40.1	9.9	2	102, 112
+Height	Weight	40.1	10	2	76, 119
+Height	Weight	40.1	10.1	1	18
+Height	Weight	40.1	12	1	19
+Height	Weight	40.1	14.9	2	22, 85
+Height	Weight	40.1	15	2	23, 103
+Height	Weight	40.1	15.1	1	50
+Height	Cost	0	0	1	1
+Height	Cost	0	0.01	1	33
+Height	Cost	0	5000	2	27, 35
+Height	Cost	0	9999.99	2	4, 58
+Height	Cost	0	10000	1	25
+Height	Cost	0	10000.01	3	72, 107, 134
+Height	Cost	0	15000	1	113
+Height	Cost	0	19999.99	2	30, 143
+Height	Cost	0	20000	1	116
+Height	Cost	0	20000.01	1	60
+Height	Cost	0.1	0	1	34
+Height	Cost	0.1	0.01	1	2
+Height	Cost	0.1	5000	2	3, 57
+Height	Cost	0.1	9999.99	2	28, 36
+Height	Cost	0.1	10000	3	71, 108, 133
+Height	Cost	0.1	10000.01	1	26
+Height	Cost	0.1	15000	2	29, 144
+Height	Cost	0.1	19999.99	1	114
+Height	Cost	0.1	20000	1	59
+Height	Cost	0.1	20000.01	1	115
+Height	Cost	12	0	2	8, 131
+Height	Cost	12	0.01	2	70, 142
+Height	Cost	12	5000	1	52
+Height	Cost	12	9999.99	1	5
+Height	Cost	12	10000	1	37
+Height	Cost	12	10000.01	1	39
+Height	Cost	12	15000	1	81
+Height	Cost	12	19999.99	1	41
+Height	Cost	12	20000	3	84, 105, 126
+Height	Cost	12	20000.01	2	90, 109
+Height	Cost	24.9	0	2	69, 141
+Height	Cost	24.9	0.01	2	7, 132
+Height	Cost	24.9	5000	1	6
+Height	Cost	24.9	9999.99	1	51
+Height	Cost	24.9	10000	1	40
+Height	Cost	24.9	10000.01	1	38
+Height	Cost	24.9	15000	1	42
+Height	Cost	24.9	19999.99	1	82
+Height	Cost	24.9	20000	2	89, 110
+Height	Cost	24.9	20000.01	3	83, 106, 125
+Height	Cost	25	0	1	62
+Height	Cost	25	0.01	2	46, 130
+Height	Cost	25	5000	1	67
+Height	Cost	25	9999.99	1	55
+Height	Cost	25	10000	1	9
+Height	Cost	25	10000.01	2	97, 121
+Height	Cost	25	15000	1	11
+Height	Cost	25	19999.99	1	54
+Height	Cost	25	20000	1	43
+Height	Cost	25	20000.01	2	88, 138
+Height	Cost	25.1	0	2	45, 129
+Height	Cost	25.1	0.01	1	61
+Height	Cost	25.1	5000	1	56
+Height	Cost	25.1	9999.99	1	68
+Height	Cost	25.1	10000	2	98, 122
+Height	Cost	25.1	10000.01	1	10
+Height	Cost	25.1	15000	1	53
+Height	Cost	25.1	19999.99	1	12
+Height	Cost	25.1	20000	2	87, 137
+Height	Cost	25.1	20000.01	1	44
+Height	Cost	32	0	1	127
+Height	Cost	32	0.01	1	77
+Height	Cost	32	5000	2	100, 118
+Height	Cost	32	9999.99	1	94
+Height	Cost	32	10000	2	64, 135
+Height	Cost	32	10000.01	1	13
+Height	Cost	32	15000	2	48, 80
+Height	Cost	32	19999.99	2	15, 91
+Height	Cost	32	20000	1	31
+Height	Cost	32	20000.01	1	65
+Height	Cost	39.9	0	1	78
+Height	Cost	39.9	0.01	1	128
+Height	Cost	39.9	5000	1	93
+Height	Cost	39.9	9999.99	2	99, 117
+Height	Cost	39.9	10000	1	14
+Height	Cost	39.9	10000.01	2	63, 136
+Height	Cost	39.9	15000	2	16, 92
+Height	Cost	39.9	19999.99	2	47, 79
+Height	Cost	39.9	20000	1	66
+Height	Cost	39.9	20000.01	1	32
+Height	Cost	40	0	3	24, 96, 111
+Height	Cost	40	0.01	2	20, 120
+Height	Cost	40	5000	1	101
+Height	Cost	40	9999.99	2	49, 139
+Height	Cost	40	10000	1	73
+Height	Cost	40	10000.01	1	75
+Height	Cost	40	15000	1	86
+Height	Cost	40	19999.99	2	104, 124
+Height	Cost	40	20000	1	17
+Height	Cost	40	20000.01	1	21
+Height	Cost	40.1	0	2	19, 119
+Height	Cost	40.1	0.01	3	23, 95, 112
+Height	Cost	40.1	5000	2	50, 140
+Height	Cost	40.1	9999.99	1	102
+Height	Cost	40.1	10000	1	76
+Height	Cost	40.1	10000.01	1	74
+Height	Cost	40.1	15000	2	103, 123
+Height	Cost	40.1	19999.99	1	85
+Height	Cost	40.1	20000	1	22
+Height	Cost	40.1	20000.01	1	18
+Height	Country	0	RF	7	1, 35, 58, 60, 72, 116, 143
+Height	Country	0	notRF	8	4, 25, 27, 30, 33, 107, 113, 134
+Height	Country	0.1	RF	8	3, 26, 28, 29, 34, 108, 114, 133
+Height	Country	0.1	notRF	7	2, 36, 57, 59, 71, 115, 144
+Height	Country	12	RF	8	5, 41, 52, 81, 105, 109, 131, 142
+Height	Country	12	notRF	7	8, 37, 39, 70, 84, 90, 126
+Height	Country	24.9	RF	7	7, 38, 40, 69, 83, 89, 125
+Height	Country	24.9	notRF	8	6, 42, 51, 82, 106, 110, 132, 141
+Height	Country	25	RF	7	11, 43, 54, 67, 97, 121, 138
+Height	Country	25	notRF	6	9, 46, 55, 62, 88, 130
+Height	Country	25.1	RF	6	10, 45, 56, 61, 87, 129
+Height	Country	25.1	notRF	7	12, 44, 53, 68, 98, 122, 137
+Height	Country	32	RF	7	15, 48, 64, 80, 91, 94, 127
+Height	Country	32	notRF	7	13, 31, 65, 77, 100, 118, 135
+Height	Country	39.9	RF	7	14, 32, 66, 78, 99, 117, 136
+Height	Country	39.9	notRF	7	16, 47, 63, 79, 92, 93, 128
+Height	Country	40	RF	8	17, 20, 21, 86, 101, 104, 111, 120
+Height	Country	40	notRF	7	24, 49, 73, 75, 96, 124, 139
+Height	Country	40.1	RF	7	23, 50, 74, 76, 95, 123, 140
+Height	Country	40.1	notRF	8	18, 19, 22, 85, 102, 103, 112, 119
+Weight	Cost	0	0	1	1
+Weight	Cost	0	0.01	1	95
+Weight	Cost	0	5000	1	6
+Weight	Cost	0	9999.99	1	139
+Weight	Cost	0	10000	2	37, 71
+Weight	Cost	0	10000.01	2	121, 136
+Weight	Cost	0	15000	3	29, 48, 113
+Weight	Cost	0	19999.99	1	124
+Weight	Cost	0	20000	2	66, 105
+Weight	Cost	0	20000.01	2	44, 88
+Weight	Cost	0.1	0	1	96
+Weight	Cost	0.1	0.01	1	2
+Weight	Cost	0.1	5000	1	140
+Weight	Cost	0.1	9999.99	1	5
+Weight	Cost	0.1	10000	2	122, 135
+Weight	Cost	0.1	10000.01	2	38, 72
+Weight	Cost	0.1	15000	1	123
+Weight	Cost	0.1	19999.99	3	30, 47, 114
+Weight	Cost	0.1	20000	2	43, 87
+Weight	Cost	0.1	20000.01	2	65, 106
+Weight	Cost	5	0	3	8, 45, 111
+Weight	Cost	5	0.01	2	33, 77
+Weight	Cost	5	5000	2	3, 101
+Weight	Cost	5	9999.99	1	55
+Weight	Cost	5	10000	2	40, 133
+Weight	Cost	5	10000.01	1	74
+Weight	Cost	5	15000	1	92
+Weight	Cost	5	19999.99	1	143
+Weight	Cost	5	20000	1	126
+Weight	Cost	5	20000.01	1	90
+Weight	Cost	9.9	0	2	34, 78
+Weight	Cost	9.9	0.01	3	7, 46, 112
+Weight	Cost	9.9	5000	1	56
+Weight	Cost	9.9	9999.99	2	4, 102
+Weight	Cost	9.9	10000	1	73
+Weight	Cost	9.9	10000.01	2	39, 134
+Weight	Cost	9.9	15000	1	144
+Weight	Cost	9.9	19999.99	1	91
+Weight	Cost	9.9	20000	1	89
+Weight	Cost	9.9	20000.01	1	125
+Weight	Cost	10	0	1	119
+Weight	Cost	10	0.01	2	130, 142
+Weight	Cost	10	5000	1	57
+Weight	Cost	10	9999.99	1	117
+Weight	Cost	10	10000	2	9, 76
+Weight	Cost	10	10000.01	1	13
+Weight	Cost	10	15000	1	16
+Weight	Cost	10	19999.99	2	12, 41
+Weight	Cost	10	20000	2	17, 116
+Weight	Cost	10	20000.01	2	60, 83
+Weight	Cost	10.1	0	2	129, 141
+Weight	Cost	10.1	0.01	1	120
+Weight	Cost	10.1	5000	1	118
+Weight	Cost	10.1	9999.99	1	58
+Weight	Cost	10.1	10000	1	14
+Weight	Cost	10.1	10000.01	2	10, 75
+Weight	Cost	10.1	15000	2	11, 42
+Weight	Cost	10.1	19999.99	1	15
+Weight	Cost	10.1	20000	2	59, 84
+Weight	Cost	10.1	20000.01	2	18, 115
+Weight	Cost	12	0	1	19
+Weight	Cost	12	0.01	2	70, 132
+Weight	Cost	12	5000	1	35
+Weight	Cost	12	9999.99	2	68, 99
+Weight	Cost	12	10000	1	108
+Weight	Cost	12	10000.01	1	63
+Weight	Cost	12	15000	1	86
+Weight	Cost	12	19999.99	1	54
+Weight	Cost	12	20000	1	31
+Weight	Cost	12	20000.01	1	21
+Weight	Cost	14.9	0	2	69, 131
+Weight	Cost	14.9	0.01	1	20
+Weight	Cost	14.9	5000	2	67, 100
+Weight	Cost	14.9	9999.99	1	36
+Weight	Cost	14.9	10000	1	64
+Weight	Cost	14.9	10000.01	1	107
+Weight	Cost	14.9	15000	1	53
+Weight	Cost	14.9	19999.99	1	85
+Weight	Cost	14.9	20000	1	22
+Weight	Cost	14.9	20000.01	1	32
+Weight	Cost	15	0	2	62, 127
+Weight	Cost	15	0.01	1	23
+Weight	Cost	15	5000	2	27, 52
+Weight	Cost	15	9999.99	2	49, 94
+Weight	Cost	15	10000	1	98
+Weight	Cost	15	10000.01	1	26
+Weight	Cost	15	15000	1	103
+Weight	Cost	15	19999.99	2	79, 82
+Weight	Cost	15	20000	1	137
+Weight	Cost	15	20000.01	1	109
+Weight	Cost	15.1	0	1	24
+Weight	Cost	15.1	0.01	2	61, 128
+Weight	Cost	15.1	5000	2	50, 93
+Weight	Cost	15.1	9999.99	2	28, 51
+Weight	Cost	15.1	10000	1	25
+Weight	Cost	15.1	10000.01	1	97
+Weight	Cost	15.1	15000	2	80, 81
+Weight	Cost	15.1	19999.99	1	104
+Weight	Cost	15.1	20000	1	110
+Weight	Cost	15.1	20000.01	1	138
+Weight	Country	0	RF	8	1, 29, 48, 66, 95, 105, 121, 136
+Weight	Country	0	notRF	8	6, 37, 44, 71, 88, 113, 124, 139
+Weight	Country	0.1	RF	8	5, 38, 43, 72, 87, 114, 123, 140
+Weight	Country	0.1	notRF	8	2, 30, 47, 65, 96, 106, 122, 135
+Weight	Country	5	RF	8	3, 40, 45, 74, 101, 111, 133, 143
+Weight	Country	5	notRF	7	8, 33, 55, 77, 90, 92, 126
+Weight	Country	9.9	RF	7	7, 34, 56, 78, 89, 91, 125
+Weight	Country	9.9	notRF	8	4, 39, 46, 73, 102, 112, 134, 144
+Weight	Country	10	RF	8	17, 41, 60, 76, 83, 116, 117, 142
+Weight	Country	10	notRF	7	9, 12, 13, 16, 57, 119, 130
+Weight	Country	10.1	RF	7	10, 11, 14, 15, 58, 120, 129
+Weight	Country	10.1	notRF	8	18, 42, 59, 75, 84, 115, 118, 141
+Weight	Country	12	RF	6	21, 35, 54, 86, 99, 108
+Weight	Country	12	notRF	6	19, 31, 63, 68, 70, 132
+Weight	Country	14.9	RF	6	20, 32, 64, 67, 69, 131
+Weight	Country	14.9	notRF	6	22, 36, 53, 85, 100, 107
+Weight	Country	15	RF	6	23, 26, 52, 94, 109, 127
+Weight	Country	15	notRF	8	27, 49, 62, 79, 82, 98, 103, 137
+Weight	Country	15.1	RF	8	28, 50, 61, 80, 81, 97, 104, 138
+Weight	Country	15.1	notRF	6	24, 25, 51, 93, 110, 128
+Cost	Country	0	RF	9	1, 34, 45, 69, 78, 111, 127, 129, 131
+Cost	Country	0	notRF	7	8, 19, 24, 62, 96, 119, 141
+Cost	Country	0.01	RF	7	7, 20, 23, 61, 95, 120, 142
+Cost	Country	0.01	notRF	9	2, 33, 46, 70, 77, 112, 128, 130, 132
+Cost	Country	5000	RF	8	3, 35, 50, 52, 56, 67, 101, 140
+Cost	Country	5000	notRF	6	6, 27, 57, 93, 100, 118
+Cost	Country	9999.99	RF	6	5, 28, 58, 94, 99, 117
+Cost	Country	9999.99	notRF	8	4, 36, 49, 51, 55, 68, 102, 139
+Cost	Country	10000	RF	6	14, 40, 64, 76, 108, 133
+Cost	Country	10000	notRF	8	9, 25, 37, 71, 73, 98, 122, 135
+Cost	Country	10000.01	RF	8	10, 26, 38, 72, 74, 97, 121, 136
+Cost	Country	10000.01	notRF	6	13, 39, 63, 75, 107, 134
+Cost	Country	15000	RF	7	11, 29, 48, 80, 81, 86, 123
+Cost	Country	15000	notRF	7	16, 42, 53, 92, 103, 113, 144
+Cost	Country	19999.99	RF	7	15, 41, 54, 91, 104, 114, 143
+Cost	Country	19999.99	notRF	7	12, 30, 47, 79, 82, 85, 124
+Cost	Country	20000	RF	7	17, 43, 66, 87, 89, 105, 116
+Cost	Country	20000	notRF	7	22, 31, 59, 84, 110, 126, 137
+Cost	Country	20000.01	RF	7	21, 32, 60, 83, 109, 125, 138
+Cost	Country	20000.01	notRF	7	18, 44, 65, 88, 90, 106, 115
